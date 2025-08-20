@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b1220;
+  --card: #0f172a;
+  --muted: #94a3b8;
+}
+html, body { height: 100%; }
+body {
+  background: linear-gradient(180deg, #0b1220 0%, #0b1220 40%, #111827 100%);
+  color: white;
+}
+.card {
+  background-color: var(--card);
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+.btn {
+  @apply rounded-2xl px-4 py-2 font-medium;
+  background: linear-gradient(90deg, #0d86ff, #66b6ff);
+  color: white;
+}
+input, select {
+  @apply bg-slate-800 rounded-xl px-3 py-2 outline-none ring-0 text-white;
+}
